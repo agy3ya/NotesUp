@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    app:liftOnScroll="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:expandedTitleMarginStart="72dp"
+        app:expandedTitleMarginBottom="28dp"
+        app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
+        app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:elevation="0dp"
+            app:title="Your Notes"
+            android:id="@+id/topAppBar"
+            app:menu="@menu/top_app_bar"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="?actionBarSize"/>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_Login">Log in</string>
+    <string name="register">Register</string>
+    <string name="log_in_with_google">Log in with Google</string>
+    <string name="todo">TODO</string>
+    <string name="notes">Notes</string>
+    <string name="save_your_notes_directly_on_cloud">Save your notes directly on cloud</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="content_description_search">Search</string>
+    <string name="search">Search</string>
+    <string name="more">more</string>
+    <string name="content_description_more">more</string>
+</resources>
