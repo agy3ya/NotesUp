@@ -3,5 +3,6 @@
     <color name="colorPrimary">#CDD7D6</color>
     <color name="colorPrimaryDark">#353B3C</color>
     <color name="colorAccent">#1BC47D</color>
+    <color name="white">#FFFFFF</color>
     <color name="textInputOutlineColor">#1BC47D</color>
 </resources>

@@ -8,14 +8,14 @@
         android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:expandedTitleMarginStart="72dp"
+        app:expandedTitleMarginStart="32dp"
         app:expandedTitleMarginBottom="28dp"
         app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
         app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed"
         >
         <com.google.android.material.appbar.MaterialToolbar
             android:elevation="0dp"
-            app:title="Your Notes"
+            app:title="Your Note"
             android:id="@+id/topAppBar"
             app:menu="@menu/top_app_bar"
             android:layout_width="match_parent"

@@ -16,4 +16,23 @@
     <string name="more">more</string>
     <string name="content_description_more">more</string>
     <string name="logout">logout</string>
+    <string name="heading">Heading</string>
+    <string name="sample_text">
+        Baby i dont understand this my heart can’t take this damage like way
+    You no longer have to pay hefty rates to your phone company to be able to send
+        /n
+        text messages. Text messages still remain the most used medium of
+        communication. The response rate and viewability of text messages
+
+        /n far exceeds any other form of communication including e-mail.
+        This is why we still rely on text messages when it comes to the most
+        important and urgent communication between our friends and family.
+        With the advent of messaging apps and services such as WhatsApp and Viber,
+        one would have thought that SMS and texting will die soon. Contrary to common
+        belief a few years ago, texting is still alive and growing. We wanted to build
+        a product that enabled free texting between friends and family and with FoxText,
+        we believe we have created world s best free texting app. Send a text now and see for yourself.
+    </string>
+    <string name="you_can_write_something_here">You can write something here</string>
+    <string name="your_note">your note</string>
 </resources>
