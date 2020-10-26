@@ -43,7 +43,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Baby i dont understand this "
+            android:text="@string/baby_i_dont_understand_this"
             android:layout_below="@id/title"
             android:textColor="@color/colorPrimary"
             android:textAppearance="?android:textAppearanceSmall"
