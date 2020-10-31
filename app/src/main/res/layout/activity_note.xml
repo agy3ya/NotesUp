@@ -21,7 +21,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/ic_marker"
             android:layout_marginStart="28dp"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            app:tint="@color/colorAccent" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

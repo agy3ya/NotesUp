@@ -13,23 +13,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ModelAdapter extends FirebaseRecyclerAdapter<Data, ModelAdapter.MyViewHolder> {
-    /**
-     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
-     * {@link FirebaseRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
+
     public ModelAdapter(@NonNull FirebaseRecyclerOptions<Data> options) {
         super(options);
     }
 
-    @Override
-    protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Data model) {
-        holder.mTitle.setText(model.getTitle());
-        holder.mNote.setText(model.getNote());
-        holder.mDate.setText(model.getDate());
-
-    }
 
     @NonNull
     @Override
@@ -40,19 +28,42 @@ public class ModelAdapter extends FirebaseRecyclerAdapter<Data, ModelAdapter.MyV
         return new MyViewHolder(view);
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView mTitle,mNote,mDate;
+    @Override
+    protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Data model) {
+    /*    holder.mTitle.setText(model.getTitle());
+        holder.mNote.setText(model.getNote());
+        holder.mDate.setText(model.getDate());
+    */
+        holder.setTitle(model.getTitle());
+        holder.setNote(model.getNote());
+        holder.setDate(model.getDate());
+    }
 
+
+
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
+//        TextView mTitle,mNote,mDate;
+          View myView;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            TextView mTitle = itemView.findViewById(R.id.title);
-            TextView mNote=itemView.findViewById(R.id.note);
-            TextView mDate= itemView.findViewById(R.id.my_date);
-
-
-
-
+            myView=itemView;
+           // TextView mTitle = itemView.findViewById(R.id.heading);
+           // TextView mNote=itemView.findViewById(R.id.subnote);
+           // TextView mDate= itemView.findViewById(R.id.my_date);
         }
+        public void setTitle(String title){
+            TextView mTitle = myView.findViewById(R.id.heading);
+            mTitle.setText(title);
+        }
+        public void setNote(String note){
+            TextView mNote=myView.findViewById(R.id.subnote);
+            mNote.setText(note);
+        }
+        public void setDate(String date){
+            TextView mDate=myView.findViewById(R.id.my_date);
+            mDate.setText(date);
+        }
+
     }
     
 }

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="0dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/colorPrimaryDark">
 <LinearLayout
     android:background="@color/colorPrimaryDark"
     android:layout_width="match_parent"
@@ -16,35 +18,37 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginStart="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_marker"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            />
 
     </RelativeLayout>
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-
-        android:layout_weight="25">
+        android:layout_weight="10">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/heading"
-            android:id="@+id/title"
+            android:id="@+id/heading"
             android:textAppearance="?android:textAppearanceLarge"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:layout_marginStart="6dp"
-            android:layout_marginTop="2dp"/>
+            android:layout_marginTop="5dp"/>
         <TextView
-            android:id="@+id/note"
+            android:id="@+id/subnote"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/baby_i_dont_understand_this"
-            android:layout_below="@id/title"
+            android:layout_below="@id/heading"
             android:textColor="@color/colorPrimary"
             android:textAppearance="?android:textAppearanceSmall"
             android:textStyle="normal"

@@ -58,6 +58,7 @@ public class NoteActivity extends AppCompatActivity {
                 }
                 String id = mDatabase.push().getKey();
               //  String date= DateFormat.getInstance().format(new Date());
+               // String date = DateFormat.getInstance().format(new Date());
                 String date = DateFormat.getInstance().format(new Date());
                 Data data = new Data(mTitle,mNote,date,id);
                 mDatabase.child(id).setValue(data);
