@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_weight="5.33">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_marker"
+            android:layout_marginStart="28dp"
+            android:contentDescription="@string/todo"
+            app:tint="@color/colorAccent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="0dp"
+                    android:id="@+id/my_heading_update"
+                    android:layout_marginStart="12dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:hint="@string/heading"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:inputType="text"
+                    android:maxLines="1"/>
+                <TextView
+                    android:id="@+id/my_date_updated"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="24dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="04:00pm \n 02 Oct 2020"
+                    android:textAlignment="textEnd"/>
+            </LinearLayout>
+            <EditText
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/my_note_updated"
+                android:background="@null"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:hint="@string/your_note"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_weight="1.33"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:backgroundTint="@color/colorAccent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_check_24"
+            android:layout_gravity="bottom|end"
+            app:fabSize="normal" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>
