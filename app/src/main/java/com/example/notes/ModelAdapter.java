@@ -1,5 +1,6 @@
 package com.example.notes;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,28 @@ public class ModelAdapter extends FirebaseRecyclerAdapter<Data, ModelAdapter.MyV
         super(options);
     }
 
+    @Override
+    protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Data model) {
+    /*    holder.mTitle.setText(model.getTitle());
+        holder.mNote.setText(model.getNote());
+        holder.mDate.setText(model.getDate());
+    */
+        holder.setTitle(model.getTitle());
+        holder.setNote(model.getNote());
+        holder.setDate(model.getDate());
+        holder.myView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),UpdateInputActivity.class);
+                view.getContext().startActivity(intent);
+
+            }
+        });
+    }
+
+
+
+
 
     @NonNull
     @Override
@@ -28,16 +51,6 @@ public class ModelAdapter extends FirebaseRecyclerAdapter<Data, ModelAdapter.MyV
         return new MyViewHolder(view);
     }
 
-    @Override
-    protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Data model) {
-    /*    holder.mTitle.setText(model.getTitle());
-        holder.mNote.setText(model.getNote());
-        holder.mDate.setText(model.getDate());
-    */
-        holder.setTitle(model.getTitle());
-        holder.setNote(model.getNote());
-        holder.setDate(model.getDate());
-    }
 
 
 
