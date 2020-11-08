@@ -20,7 +20,7 @@
     </style>
     <style name="Widget.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="rippleColor">@color/colorPrimaryDark</item>
         <item name="android:stateListAnimator" tools:ignore="NewApi">
             @animator/next_button_state_list_anim
         </item>

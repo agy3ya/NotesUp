@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UpdateInputActivity">
     <include layout="@layout/toolbar"/>
 
     <LinearLayout
@@ -33,6 +34,8 @@
                 tools:ignore="UselessParent">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="0dp"
+                    android:padding="12dp"
+                    android:paddingStart="0dp"
                     android:id="@+id/my_heading_update"
                     android:layout_marginStart="12dp"
                     android:layout_height="wrap_content"
@@ -45,7 +48,8 @@
                     android:layout_weight="1"
                     android:textAlignment="textStart"
                     android:inputType="text"
-                    android:maxLines="1"/>
+                    android:maxLines="1"
+                    tools:ignore="RtlSymmetry" />
                 <TextView
                     android:id="@+id/my_date_updated"
                     android:layout_width="wrap_content"
@@ -56,19 +60,23 @@
                     android:text="04:00pm \n 02 Oct 2020"
                     android:textAlignment="textEnd"/>
             </LinearLayout>
+
             <EditText
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="24dp"
                 android:id="@+id/my_note_updated"
-                android:background="@null"
-                android:textColorHint="@color/colorPrimary"
-                android:textColor="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
-                android:textAlignment="textStart"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
                 android:gravity="start"
                 android:hint="@string/your_note"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:paddingStart="0dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                tools:ignore="RtlSymmetry" />
 
         </LinearLayout>
 

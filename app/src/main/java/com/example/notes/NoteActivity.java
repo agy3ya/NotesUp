@@ -59,11 +59,12 @@ public class NoteActivity extends AppCompatActivity {
                 String id = mDatabase.push().getKey();
               //  String date= DateFormat.getInstance().format(new Date());
                // String date = DateFormat.getInstance().format(new Date());
-                String date = DateFormat.getInstance().format(new Date());
+                String date = DateFormat.getDateInstance().format(new Date());
+
                 Data data = new Data(mTitle,mNote,date,id);
                 mDatabase.child(id).setValue(data);
                 Toast.makeText(getApplicationContext(),"Data Inserted",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+               startActivity(new Intent(getApplicationContext(),HomeActivity.class));
 
 
             }

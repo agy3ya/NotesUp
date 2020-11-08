@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -37,6 +39,9 @@ public class HomeActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private ModelAdapter adapter;
     private MaterialToolbar mToolBar;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +117,7 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 
 }

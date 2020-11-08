@@ -30,6 +30,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="200dp"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:layout_weight="10">
         <TextView
@@ -40,8 +41,7 @@
             android:textAppearance="?android:textAppearanceLarge"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginStart="6dp" />
         <TextView
             android:id="@+id/subnote"
             android:layout_marginTop="10dp"
@@ -65,22 +65,26 @@
         android:gravity="end"
         android:layout_gravity="center_vertical"
         android:layout_weight="10">
-        <ImageButton
-            android:layout_marginStart="60dp"
+        <ImageView
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="10dp"
             android:id="@+id/trash"
+            android:padding="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
             android:src="@drawable/ic_icon_trash_bin"
             />
+
         <TextView
-            android:layout_marginTop="16dp"
+            android:id="@+id/my_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/trash"
-            android:id="@+id/my_date"
-            android:textColor="@color/colorPrimary"
-            android:text="22-oct-2020"/>
+            android:layout_marginTop="12dp"
+            android:text="22-oct-2020"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary" />
 
     </RelativeLayout>
 
