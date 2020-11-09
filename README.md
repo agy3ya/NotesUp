@@ -4,6 +4,7 @@ Firebased Note taking app where data is directly stored on the firebaser realtim
 
 
 <h1>  Screenshots </h1>
+
 **Login**                                          **Registration**                                                       
 
 <img src="Images/Login.jpg" width="250">  <img src="Images/Register.jpg" width="250">
