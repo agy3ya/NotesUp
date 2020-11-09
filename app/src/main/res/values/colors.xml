@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#CDD7D6</color>
     <color name="colorPrimaryDark">#353B3C</color>
-    <color name="colorAccent">#1BC47D</color>
+    <color name="colorAccent">#F26419</color>
     <color name="white">#FFFFFF</color>
-    <color name="textInputOutlineColor">#1BC47D</color>
+    <color name="textInputOutlineColor">@color/colorAccent</color>
+    <color name="colorButton">#C9D7D6</color>
 </resources>
