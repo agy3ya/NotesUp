@@ -38,33 +38,28 @@ public class ModelAdapter extends FirebaseRecyclerAdapter<Data, ModelAdapter.MyV
 
     @Override
     protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Data model) {
-    /*    holder.mTitle.setText(model.getTitle());
-        holder.mNote.setText(model.getNote());
-        holder.mDate.setText(model.getDate());
-    */
+
         holder.setTitle(model.getTitle());
         holder.setNote(model.getNote());
         holder.setDate(model.getDate());
-        post_key = getRef(position).getKey();
-        title=model.getTitle();
-        note=model.getNote();
-        date=model.getDate();
+
+
 
 
         holder.myView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             /*   Intent intent = new Intent(view.getContext(),UpdateInputActivity.class);
-                view.getContext().startActivity(intent);
 
-            */
-
+                post_key = getRef(position).getKey();
+                title=model.getTitle();
+                note=model.getNote();
+                date=model.getDate();
 
                 updateData(view);
             }
         });
 
-        holder.trash.setOnClickListener(new View.OnClickListener() {
+             holder.trash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

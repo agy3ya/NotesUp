@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Notes">
-        <activity android:name=".UpdateInputActivity"></activity>
+        <activity android:name=".UpdateInputActivity"/>
         <activity android:name=".NoteActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegistrationActivity" />
