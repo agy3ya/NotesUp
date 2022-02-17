@@ -1,6 +1,6 @@
 # AndroidNotesApp
 Notes taking app where you can store your notes directly on cloud.
-Firebased Note taking app where data is directly stored on the firebaser realtime database.
+Firebased Note taking app where data is directly stored on the firebase realtime database.
 
 
 <h1>  Screenshots </h1>
